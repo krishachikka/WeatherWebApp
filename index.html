@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Updates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Weather</h1>
+    <div class="container">
+
+        <div class="searchbar">
+           <span class="iloc"><ion-icon name="location-outline"></ion-icon></span>
+           <input type="text" placeholder="enter location" class="searchtext" id="searchtext">
+           <button><span class="icon"><ion-icon name="search"></ion-icon></span></button>
+        </div>
+
+        <div class="weather">
+            <img src="images/firstimg.png" alt="Hello!" class="image" id="image">
+            <div class="temp hidden"><h1>15°c</h1></div>
+            <div class="city "><h3>Hello!</h3></div>
+        </div>
+        
+        <div class="details hidden">
+            <img src="images/wind.png" alt="" class="windimg">
+            <div class="col">
+                <p class="wind">20 km/h</p>
+                <p>Wind Speed</p>
+            </div>
+            <img src="images/humidity.png" alt="" class="humidimg">
+            <div class="col">
+                <p class="humidity">45%</p>
+                <p>Humidity</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

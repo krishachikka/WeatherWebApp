@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+*{
+    font-family: "Poppins",'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(1, 20, 50);
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+body h1{
+    margin-left: 100px;
+}
+.bg{
+    z-index: 10;
+    position: fixed;
+}
+.container{
+    vertical-align: middle;
+    width: 90%;
+    max-width: 400px;
+    max-height: 500px;
+    margin: 80px auto 0;
+    min-width: 280px;
+    border-radius: 50px;
+    border: 2px solid rgba(252, 249, 249, 0.597);
+    background: transparent;
+    backdrop-filter: blur(60px);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 16px rgb(93, 89, 89);
+    overflow: hidden;
+}
+.searchtext{
+    width: 90%;
+    max-width: 200px;
+    height: 50px;
+    padding-left: 30px;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.522);
+    font-size: 20px;
+}
+.searchtext:hover{
+    box-shadow: 0 0 10px rgb(132, 130, 130);
+}
+.iloc{
+    color: rgb(184, 177, 177);
+    font-size: 25px; 
+}
+button{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.522);
+    color: white;
+    font-size: 20px;
+}
+button:hover{
+    box-shadow: 0 0 15px rgb(215, 213, 213);
+    cursor: pointer;
+}
+.weather{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+.image{
+    width: 200px;
+    transition: opacity 0.5s ease-in-out;
+}
+.details{
+    display: flex;
+    padding: 0 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+}
+.humidimg , .windimg{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.col{
+    width: 180px;
+    height: 70px;
+    font-size: 15px;
+    text-align: left;
+}
+.wind, .humidity{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.city{
+    font-size: 25px;
+    font-weight: 600;
+}
+.temp{
+    font-size: 34px;
+    font-weight: 600;
+}
+.hidden{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-color: rgb(4, 37, 120);
+        background: url('images/bgmedia.jpeg');
+        background-repeat: inherit;  
+    }
+    .container{
+        max-height: 700px;
+        box-shadow: 0 0 16px rgb(24, 24, 24);
+    }    
+}
