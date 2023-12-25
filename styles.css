@@ -123,6 +123,8 @@ button:hover{
     }
     .container{
         max-height: 700px;
+        background: transparent;
+        backdrop-filter: blur(60px);
         box-shadow: 0 0 16px rgb(24, 24, 24);
     }    
 }
