@@ -1,1 +1,3 @@
-# PRODIGY_WD_05
+# Weather Web App
+<b>Link:</b> https://krishachikka.github.io/WeatherWebApp/
+Used Openweathermap api
